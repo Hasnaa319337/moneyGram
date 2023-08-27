@@ -18,7 +18,7 @@
       </v-container>
     </div>
     <div class="form">
-      <v-form @submit.prevent="">
+      <v-form @submit.prevent="sendTrack">
         <v-container style="text-align: end" class="form_container">
           <v-row class="form_row">
             <v-col cols="12" lg="6" md="6" sm="12" class="for_text">
@@ -60,6 +60,11 @@ export default {
     return {
       track_number: '',
       nmae: ''
+    }
+  },
+  methods:{
+    sendTrack(){
+      this.$router.push('/recieve')
     }
   }
 }
