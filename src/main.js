@@ -4,6 +4,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+
+// bootstarp
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
