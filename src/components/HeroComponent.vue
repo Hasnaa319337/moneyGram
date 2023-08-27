@@ -35,7 +35,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" lg="6" md="6" sm="6" xs="6">
-            <router-link to="/">
+            <router-link to="/track">
               <img src="@/assets/images/trackatransfer.svg" alt="" />
               <span>تعقب نقل</span>
             </router-link></v-col
