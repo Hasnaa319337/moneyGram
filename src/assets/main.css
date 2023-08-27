@@ -1,0 +1,15 @@
+@import './base.css';
+
+* {
+  font-family: 'DroidArabicKufi';
+
+  font-weight: normal;
+  font-style: normal;
+  direction: rtl;
+  transition: 0.3s all ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
