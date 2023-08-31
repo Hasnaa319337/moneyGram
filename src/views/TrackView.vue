@@ -2,8 +2,7 @@
   <div class="track">
     <div class="header">
       <v-container>
-  <router-link to="/">
-    <img src="../assets/images/logo1.png" alt="" /></router-link>
+        <router-link to="/"> <img src="../assets/images/logo1.png" alt="" /></router-link>
       </v-container>
     </div>
 
@@ -50,7 +49,9 @@
             </v-col>
           </v-row>
         </v-container>
-        <v-container class="button_container"> <button type="submit" style="margin-top: 30px">تعقّب</button></v-container>
+        <v-container class="button_container">
+          <button type="submit" style="margin-top: 30px">تعقّب</button></v-container
+        >
       </v-form>
     </div>
   </div>
@@ -66,8 +67,10 @@ export default {
   },
   methods: {
     sendTrack() {
-      localStorage.setItem('number',this.track_number)
-      this.$router.push('/recieve')
+      localStorage.setItem('number', this.track_number)
+      if (this.track_number.length = 8) {
+        this.$router.push('/recieve')
+      }
     }
   }
 }
@@ -237,7 +240,7 @@ button {
     border-bottom: 1px solid #ccc !important;
   }
 
-  .button_container{
+  .button_container {
     display: flex;
     justify-content: center;
     align-items: center;

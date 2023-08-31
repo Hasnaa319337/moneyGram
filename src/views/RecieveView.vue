@@ -92,18 +92,10 @@ export default {
     }
   },
   mounted() {
-    // this.updateColumn2()
+
   },
   methods: {
-    // getCurrentDate() {
-    //   const date = new Date()
-    //   return date.toLocaleDateString()
-    // },
-    // updateColumn2() {
-    //   const currentDate = this.getCurrentDate()
-    //   this.tableData[1].column2 = currentDate
-    //   this.tableData[2].column2 = currentDate
-    // }
+ 
   }
 }
 </script>
