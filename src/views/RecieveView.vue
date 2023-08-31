@@ -21,7 +21,7 @@
           style="isplay: flex; justify-content: center; align-items: center; justify-items: center"
         >
           <img
-            style="margin-left: 19px"
+            style="margin-left: 16px"
             width="30"
             height="30"
             src="https://img.icons8.com/fluency/48/clock--v1.png"
@@ -170,7 +170,7 @@ export default {
   }
   p {
     color: #a2a2a2;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 .steps {
