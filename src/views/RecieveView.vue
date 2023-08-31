@@ -20,7 +20,7 @@
           style="isplay: flex; justify-content: center; align-items: center; justify-items: center"
         >
           <img
-            style="margin-left: 20px"
+            style="margin-left: 18px"
             width="30"
             height="30"
             src="https://img.icons8.com/fluency/48/clock--v1.png"
@@ -162,6 +162,7 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 0 !important;
  
   h5 {
     color: #009744;
