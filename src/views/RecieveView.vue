@@ -84,7 +84,7 @@ export default {
 
         {
           column1:
-            ' <img   width="30px" height="30px"  src="https://img.icons8.com/fluency/48/clock--v1.png"   alt="clock--v1"     />            ',
+            ' <img   width="20px" height="20px"  src="https://img.icons8.com/fluency/48/clock--v1.png"   alt="clock--v1"     />            ',
           column2: localStorage.getItem('track_number'),
           column3: ': الرقم المرجعي'
         }
@@ -157,13 +157,13 @@ export default {
   }
 }
 .ready {
-  margin: 50px;
+  margin:10px 50px;
   text-align: center;
   display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 0 !important;
+ 
  
   h5 {
     color: #009744;
