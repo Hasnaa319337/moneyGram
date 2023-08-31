@@ -1,7 +1,8 @@
 <template>
   <section style="background: #fff;">
     <div class="logo">
-      <img
+      <router-link to="/">
+        <img
         src="@/assets/images/logo1.png"
         style="
           width: 150px;
@@ -9,7 +10,7 @@
           margin-top: 11px;
         "
         alt=""
-      />
+      /></router-link>
     </div>
     <hr />
     <div class="container" style="text-align: end">

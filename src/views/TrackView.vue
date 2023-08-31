@@ -2,7 +2,8 @@
   <div class="track">
     <div class="header">
       <v-container>
-        <img src="../assets/images/logo1.png" alt="" />
+  <router-link to="/">
+    <img src="../assets/images/logo1.png" alt="" /></router-link>
       </v-container>
     </div>
 
