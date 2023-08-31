@@ -179,9 +179,8 @@ export default {
   right: 0;
   width: 100%;
   background-color: #f6f6f6;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 30px 0;
-  // height: 53%;
   hr {
     background-color: #a2a2a2;
     margin-top: 50px;

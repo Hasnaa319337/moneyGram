@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style scoped>
+a{text-decoration: none !important;}
 .second {
   border-top: 1px solid #ddd;
   background: #f4f4f4;
