@@ -179,7 +179,7 @@ export default {
   background-color: #f6f6f6;
   margin-top: 50px;
   padding: 30px 0;
-  height: 53%;
+  // height: 53%;
   hr {
     background-color: #a2a2a2;
     margin-top: 50px;
