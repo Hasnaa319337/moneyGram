@@ -85,7 +85,7 @@ export default {
         {
           column1:
             ' <img   width="20px" height="20px"  src="https://img.icons8.com/fluency/48/clock--v1.png"   alt="clock--v1"     />            ',
-          column2: localStorage.getItem('track_number'),
+          column2: localStorage.getItem('number'),
           column3: ': الرقم المرجعي'
         }
       ]
@@ -157,7 +157,7 @@ export default {
   }
 }
 .ready {
-  margin:10px 50px;
+  margin:15px 50px;
   text-align: center;
   display: flex;
     align-items: center;

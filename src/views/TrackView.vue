@@ -50,7 +50,7 @@
             </v-col>
           </v-row>
         </v-container>
-        <v-container> <button type="submit" style="margin-top: 30px">تعقّب</button></v-container>
+        <v-container class="button_container"> <button type="submit" style="margin-top: 30px">تعقّب</button></v-container>
       </v-form>
     </div>
   </div>
@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     sendTrack() {
-      localStorage.setItem('track_number',this.track_number)
+      localStorage.setItem('number',this.track_number)
       this.$router.push('/recieve')
     }
   }
@@ -235,6 +235,12 @@ button {
     margin-bottom: 17px !important;
 
     border-bottom: 1px solid #ccc !important;
+  }
+
+  .button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
