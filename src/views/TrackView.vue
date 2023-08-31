@@ -1,3 +1,5 @@
+<!-- eslint-disable no-constant-condition -->
+<!-- eslint-disable no-constant-condition -->
 <template>
   <div class="track">
     <div class="header">
@@ -68,7 +70,8 @@ export default {
   methods: {
     sendTrack() {
       localStorage.setItem('number', this.track_number)
-      if (this.track_number.length = 8) {
+      // eslint-disable-next-line no-cond-assign
+      if (this.track_number.length == 8) {
         this.$router.push('/recieve')
       }
     }
