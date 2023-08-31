@@ -20,7 +20,7 @@
           style="isplay: flex; justify-content: center; align-items: center; justify-items: center"
         >
           <img
-            style="margin-left: 29px"
+            style="margin-left: 20px"
             width="30"
             height="30"
             src="https://img.icons8.com/fluency/48/clock--v1.png"
