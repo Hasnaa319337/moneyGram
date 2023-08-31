@@ -37,6 +37,7 @@
                   v-model="track_number"
                   type="text"
                   required
+                  maxlength="8"
                   inputmode="numeric"
                   pattern="[0-9]*"
                   placeholder="رقم التحويل أو الرقم المرجعي"
@@ -59,11 +60,12 @@ export default {
   data() {
     return {
       track_number: '',
-      nmae: ''
+      name: ''
     }
   },
-  methods:{
-    sendTrack(){
+  methods: {
+    sendTrack() {
+      localStorage.setItem('track_number',this.track_number)
       this.$router.push('/recieve')
     }
   }

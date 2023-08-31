@@ -1,57 +1,56 @@
 <template>
-  <section>
-    <div class="logo">logo</div>
+  <section style="background: #fff;">
+    <div class="logo">
+      <img
+        src="@/assets/images/logo1.png"
+        style="
+          width: 150px;
+
+          margin-top: 11px;
+        "
+        alt=""
+      />
+    </div>
     <hr />
-    <div class="container">
+    <div class="container" style="text-align: end">
       <div class="process">
         <div class="col-lg-3">تم الاستلام</div>
-        <div class="col-lg-3">
-          <svg
-            fill="#000000"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 32 32"
-            xml:space="preserve"
-            width="25px"
-            height="25px"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                id="time_1_"
-                d="M16,31.36C7.53,31.36,0.64,24.47,0.64,16S7.53,0.64,16,0.64S31.36,7.53,31.36,16S24.47,31.36,16,31.36z M15.64,28h0.72v2.636c7.788-0.188,14.087-6.488,14.276-14.276H28v-0.72h2.636C30.447,7.853,24.147,1.553,16.36,1.364V4h-0.72V1.364C7.853,1.553,1.553,7.853,1.364,15.64H4v0.72H1.364c0.189,7.788,6.488,14.087,14.276,14.276V28z M22.748,20.312l-7.108-4.104V6h0.72v9.792l6.748,3.896L22.748,20.312z"
-              ></path>
-              <rect
-                id="_Transparent_Rectangle"
-                style="fill: none"
-                width="15"
-                height="15"
-              ></rect>
-            </g>
-          </svg>
+        <div
+          class="col-lg-3"
+          style="isplay: flex; justify-content: center; align-items: center; justify-items: center"
+        >
+          <img
+            style="margin-left: 29px"
+            width="30"
+            height="30"
+            src="https://img.icons8.com/fluency/48/clock--v1.png"
+            alt="clock--v1"
+          />
         </div>
         <div class="col-lg-3">قيد المعالجة</div>
       </div>
       <!-- end process -->
       <div class="ready">
         <h5>جاهز للاستلام</h5>
-        <p>MoneyGramأصبح المال جاهزا للاستلام من موقع ل</p>
+        <p>MoneyGram أصبح المال جاهزا للاستلام من موقع ل</p>
       </div>
       <div class="steps">
         <hr />
-        <h5>الخطوات التالية :</h5>
-        <p>على المستلم إحضار بطاقة الهوية و رقم مرجعيا لاستلام المال</p>
-        <span> ابحث عن موقع </span>
+        <div class="content">
+          <h5 style="display: inline-block">:الخطوات التالية</h5>
+          <img
+            style="transform: rotate(45deg); margin-bottom: 10px"
+            width="20"
+            height="20"
+            src="https://img.icons8.com/emoji/48/fork-and-knife-emoji.png"
+            alt="fork-and-knife-emoji"
+          />
+          <p>على المستلم إحضار بطاقة الهوية و رقم مرجعيا لاستلام المال</p>
+          <span> ابحث عن موقع </span>
+        </div>
 
         <div class="details_proccess">
-          <h5>تفاصيل العملية :</h5>
+          <h5>:تفاصيل العملية</h5>
           <table class="table">
             <tbody>
               <tr v-for="(item, index) in tableData" :key="index">
@@ -63,10 +62,7 @@
           </table>
           <!-- end table -->
           <div class="notes">
-            <p>
-              ملاحظة الإيصالات عبر الإنترنت غير متوفرة لمعاملات التجارية في
-              الموقع
-            </p>
+            <p>ملاحظة الإيصالات عبر الإنترنت غير متوفرة لمعاملات التجارية في الموقع</p>
           </div>
         </div>
         <!-- end details_proccess -->
@@ -80,40 +76,39 @@
 export default {
   data() {
     return {
-      currentDate: "",
+      currentDate: '',
       showIcon: true,
       tableData: [
-        { column1: "", column2: "تحويل", column3: "نوع العملية" },
-        { column1: "", column2: "", column3: "تاريخ البدء" },
-        { column1: "", column2: "", column3: "جاهز للاستلام" },
+        { column1: '', column2: 'تحويل', column3: ': نوع العملية' },
+
         {
           column1:
-            '<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="25px" height="25px"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="time_1_" d="M16,31.36C7.53,31.36,0.64,24.47,0.64,16S7.53,0.64,16,0.64S31.36,7.53,31.36,16S24.47,31.36,16,31.36z M15.64,28h0.72v2.636c7.788-0.188,14.087-6.488,14.276-14.276H28v-0.72h2.636C30.447,7.853,24.147,1.553,16.36,1.364V4h-0.72V1.364C7.853,1.553,1.553,7.853,1.364,15.64H4v0.72H1.364c0.189,7.788,6.488,14.087,14.276,14.276V28z M22.748,20.312l-7.108-4.104V6h0.72v9.792l6.748,3.896L22.748,20.312z"></path><rect id="_Transparent_Rectangle" style="fill: none" width="15" height="15"></rect></g></svg>',
-          column2: "123456789",
-          column3: "الرقم المرجعي",
-        },
-      ],
-    };
+            ' <img   width="30px" height="30px"  src="https://img.icons8.com/fluency/48/clock--v1.png"   alt="clock--v1"     />            ',
+          column2: localStorage.getItem('track_number'),
+          column3: ': الرقم المرجعي'
+        }
+      ]
+    }
   },
   mounted() {
-    this.updateColumn2();
+    this.updateColumn2()
   },
   methods: {
     getCurrentDate() {
-      const date = new Date();
-      return date.toLocaleDateString();
+      const date = new Date()
+      return date.toLocaleDateString()
     },
     updateColumn2() {
-      const currentDate = this.getCurrentDate();
-      this.tableData[1].column2 = currentDate;
-      this.tableData[2].column2 = currentDate;
-    },
-  },
-};
+      const currentDate = this.getCurrentDate()
+      this.tableData[1].column2 = currentDate
+      this.tableData[2].column2 = currentDate
+    }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" >
+<style lang="scss">
 .logo {
   margin: auto;
   text-align: center;
@@ -129,33 +124,26 @@ export default {
     background-color: #f6f6f6;
   }
   div:first-child {
-    clip-path: polygon(100% 10%, 100% 50%, 100% 100%, 0% 100%, 0% 55%, 0% 10%);
-    // clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-    // background-color: blue;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 11% 50%, 0% 0%);
+    margin-left: -20px;
     @media (max-width: 480px) {
-      margin-left: -22px;
+      margin-left: 1px;
     }
   }
   div:last-child {
-    clip-path: polygon(84% 10%, 100% 50%, 84% 100%, 0% 100%, 0 55%, 0% 10%);
-    // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
-
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 55%, 0% 0%);
+    margin-right: -50px;
     // background-color: red;
     @media (max-width: 480px) {
-      margin-right: -22px;
+      margin-right: -10px;
     }
   }
   div {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    clip-path: polygon(84% 10%, 100% 50%, 84% 99%, 0% 100%, 0 55%, 0% 10%);
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 22% 50%, 10% 0%);
     background-color: #009744;
-    color: #969a98;
+    color: #a2a2a2;
     text-align: center;
     font-weight: 700;
-    margin-right: -60px;
     height: 80px;
     width: 300px;
     line-height: 80px;
@@ -170,48 +158,72 @@ export default {
 .ready {
   margin: 50px;
   text-align: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
   h5 {
     color: #009744;
   }
   p {
-    color: #969a98;
+    color: #a2a2a2;
   }
 }
 .steps {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   background-color: #f6f6f6;
-  padding: 30px;
   margin-top: 50px;
+  padding: 30px 0;
+  height: 53%;
   hr {
-    background-color: #969a98;
+    background-color: #a2a2a2;
     margin-top: 50px;
+    width: 100%;
+  }
+  .content {
+    padding: 0px 30px;
+    p {
+      @media (max-width: 480px) {
+        font-size: 15px;
+      }
+    }
   }
   span {
-    color: #4998af;
+    color: #3b9dcc;
     font-weight: 700;
     margin-top: -10px;
     display: block;
   }
   .details_proccess {
     margin-top: 20px;
+    padding: 0px 30px;
   }
   .notes {
-    color: #969a98;
-    // margin-top: 30px;
+    color: #a2a2a2;
     font-size: 20px;
     @media (max-width: 480px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
 .table {
   border-collapse: collapse;
+  --bs-table-bg: #f6f6f6 !important;
 }
 .table th,
 .table td {
   padding: 8px;
-  color: #969a98;
+  color: #a2a2a2;
   font-size: 18px;
-  // text-align: start;
+  font-size: 20px;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 .table tr:last-child td {
   border-bottom: none;
