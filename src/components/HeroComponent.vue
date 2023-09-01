@@ -90,7 +90,10 @@ export default {}
 }
 .small_hero h1 {
   color: #000 !important;
-  line-height: 65px;
+
+  line-height: 56px !important;
+    font-size: 42px !important;
+  
 }
 .small_hero h1 span {
   font-family: inherit;
