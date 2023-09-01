@@ -93,6 +93,8 @@
                             line-height: 20px;
                             font-weight: 300;
                             font-family: Roboto, Helvetica, Arial, sans-serif;
+                            padding-bottom: 17px;
+                            padding-top: 0;
                           "
                         >
                           <br />
@@ -262,8 +264,8 @@ export default {
 }
 @media (max-width: 959px) {
   .v-dialog > .v-overlay__content {
-  width: 100% !important;
-}
+    width: 100% !important;
+  }
   .form_container {
     padding-top: 0 !important;
   }
