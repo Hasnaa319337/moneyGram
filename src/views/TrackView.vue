@@ -77,6 +77,7 @@
 export default {
   data() {
     return {
+      
       track_number: '',
       name: ''
     }

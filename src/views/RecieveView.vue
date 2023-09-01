@@ -1,15 +1,15 @@
 <template>
-  <section style="background: #fff;">
+  <section style="background: #fff">
     <div class="logo">
       <router-link to="/">
         <img
-        src="@/assets/images/logo1.png"
-        style="
-          width: 150px;
+          src="@/assets/images/logo1.png"
+          style="
+            width: 150px;
 
-          margin-top: 11px;
-        "
-        alt=""
+            margin-top: 11px;
+          "
+          alt=""
       /></router-link>
     </div>
     <hr />
@@ -18,7 +18,7 @@
         <div class="col-lg-3">تم الاستلام</div>
         <div
           class="col-lg-3"
-          style="isplay: flex; justify-content: center; align-items: center; justify-items: center"
+          style="display: flex; justify-content: center; align-items: center; justify-items: center"
         >
           <img
             style="margin-left: 16px"
@@ -91,16 +91,11 @@ export default {
       ]
     }
   },
-  mounted() {
-
-  },
-  methods: {
- 
-  }
+  mounted() {},
+  methods: {}
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .logo {
   margin: auto;
@@ -149,14 +144,13 @@ export default {
   }
 }
 .ready {
-  margin:15px 50px;
+  margin: 15px 50px;
   text-align: center;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- 
- 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   h5 {
     color: #009744;
   }
