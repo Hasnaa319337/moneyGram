@@ -11,10 +11,10 @@
     <div class="text">
       <v-container>
         <img
-          width="20"
-          height="20"
-          src="https://img.icons8.com/ios/50/sneakers.png"
-          alt="sneakers"
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios/50/fast-track--v2.png"
+          alt="fast-track--v2"
         />
         <h2>تعقّب</h2>
       </v-container>
@@ -31,28 +31,41 @@
             </v-col>
             <v-col cols="12" lg="6" md="6" sm="12">
               <div class="inputs">
-                <label for="number" class="text-float-label text-float-label-off"
-                  >رقم التحويل أو الرقم المرجعي</label
-                >
-                <input
-                  class=""
-                  v-model="track_number"
-                  type="text"
-                  required
-                  maxlength="8"
-                  inputmode="numeric"
-                  pattern="[0-9]*"
-                  placeholder="رقم التحويل أو الرقم المرجعي"
-                  float-label="رقم التخويل أو الرقم المرجعي"
-                />
-                <label for="name" class="text-float-label text-float-label-off">شهرتك</label>
-                <input type="text" required placeholder="شهرتك" v-model="name" />
+                <div class="field">
+                  <input
+                    class=""
+                    v-model="track_number"
+                    type="text"
+                    required
+                    maxlength="8"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                  />
+                  <button style="position: absolute; right: 8px; top: 15px">
+                    <img
+                    width="15"
+                    height="15"
+                    src="https://img.icons8.com/fluency-systems-regular/48/info--v1.png"
+                    alt="info--v1"
+                  />
+                  </button>
+                
+                  <label
+                    for="number"
+                    title="رقم التحويل أو الرقم المرجعي"
+                    data-title="رقم التحويل أو الرقم المرجعي"
+                  ></label>
+                </div>
+                <div class="field">
+                  <input type="text" required v-model="name" />
+                  <label for="password" title="شهرتك" data-title="شهرتك"></label>
+                </div>
               </div>
             </v-col>
           </v-row>
         </v-container>
         <v-container class="button_container">
-          <button type="submit" style="margin-top: 30px">تعقّب</button></v-container
+          <button type="submit" style="margin-top: 30px" class="submitBtn">تعقّب</button></v-container
         >
       </v-form>
     </div>
@@ -79,7 +92,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .track {
   min-height: 100%;
   background: #f7f6f6;
@@ -134,6 +147,7 @@ export default {
 }
 .inputs {
   background: #fff !important;
+  position: relative;
 }
 .inputs input {
   display: block;
@@ -156,31 +170,8 @@ export default {
 .inputs input::placeholder {
   color: #888888;
 }
-input:focus {
-  border-color: #66afe9;
-  outline: 0;
-  box-shadow:
-    inset 0 1px 1px rgba(183, 165, 165, 0.075),
-    0 0 8px rgba(102, 175, 233, 0.6);
-}
-.inputs .text-float-label-target {
-  position: relative;
-  padding-top: 20px;
-}
-.inputs .text-float-label-off {
-  display: inline-block;
-  transform: translate(0, 5px);
-  transition:
-    transform 100ms,
-    opacity 200ms;
-  opacity: 0;
-}
-input:focus label {
-  transform: translate(0, -3px);
-  opacity: 1 !important;
-}
 
-button {
+.submitBtn {
   font-size: 16px;
   padding: 8px;
   float: right;
@@ -247,6 +238,59 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.label-before {
+  line-height: 20px;
+  font-size: 12px;
+  top: -10px;
+  background: #fff;
+  padding: 0 6px;
+  left: 9px;
+}
+
+.container {
+  width: 80%;
+  margin: 30px 10%;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 15px;
+  label::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #777;
+    transition: 300ms all;
+  }
+  input {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    &:focus {
+      outline: 0;
+      border-color: #009cde;
+    }
+    &:valid + label::before {
+      @extend .label-before;
+      content: attr(data-title);
+      font-size: 15px;
+    }
+    &:focus + label::before {
+      @extend .label-before;
+      color: #009cde;
+      font-size: 17px;
+    }
   }
 }
 </style>
