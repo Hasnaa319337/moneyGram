@@ -11,8 +11,8 @@
     <div class="text">
       <v-container>
         <img
-          width="30"
-          height="30"
+          width="25"
+          height="25"
           src="https://img.icons8.com/ios/50/fast-track--v2.png"
           alt="fast-track--v2"
         />
