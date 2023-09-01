@@ -29,9 +29,9 @@
                 <p>إبحث عن وضعية أي عملية عبر إدخال رقم التحويل أو الرقم المرجعي و شهرتك.</p>
               </div>
             </v-col>
-            <v-col cols="12" lg="6" md="6" sm="12">
+            <v-col cols="12" lg="6" md="6" sm="12" style="background: #fff;">
               <div class="inputs">
-                <div class="field">
+                <div class="field" style="    margin-top: 26px;">
                   <input
                     class=""
                     v-model="track_number"
@@ -214,7 +214,7 @@ export default {
   .form .for_text {
     background: #f7f6f6 !important;
     padding: 12px !important;
-    border-bottom: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
   }
   .form .form_text {
     background: #f7f6f6 !important;
