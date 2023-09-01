@@ -1,5 +1,13 @@
 <template>
   <div>
+    <v-container>
+      <router-link to="/">
+        <img
+          style="width: 130px; margin: auto; display: block"
+          src="../assets/images/logo1.png"
+          alt=""
+      /></router-link>
+    </v-container>
     <hero-component />
     <div class="second">
       <how-component />
@@ -23,10 +31,12 @@ export default {
 </script>
 
 <style scoped>
-a{text-decoration: none !important;}
+a {
+  text-decoration: none !important;
+}
 .second {
   border-top: 1px solid #ddd;
   background: #f4f4f4;
-  padding: 20px 0 0 ;
+  padding: 20px 0 0;
 }
 </style>
