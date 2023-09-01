@@ -368,6 +368,6 @@ export default {
 }
 
 .v-dialog > .v-overlay__content {
-  width: 43% !important;
+  // width: 43% !important;
 }
 </style>
