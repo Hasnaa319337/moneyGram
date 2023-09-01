@@ -41,6 +41,11 @@
                     inputmode="numeric"
                     pattern="[0-9]*"
                   />
+                  <label
+                    for="number"
+                    title="رقم التحويل أو الرقم المرجعي"
+                    data-title="رقم التحويل أو الرقم المرجعي"
+                  ></label>
                   <button style="position: absolute; right: 8px; top: 15px">
                     <img
                     width="15"
@@ -50,11 +55,7 @@
                   />
                   </button>
                 
-                  <label
-                    for="number"
-                    title="رقم التحويل أو الرقم المرجعي"
-                    data-title="رقم التحويل أو الرقم المرجعي"
-                  ></label>
+                 
                 </div>
                 <div class="field">
                   <input type="text" required v-model="name" />
@@ -205,10 +206,10 @@ export default {
     background: #f7f6f6;
   }
   .inputs input {
-    border-left: none !important;
-    border-top: none !important;
-    border-right: none !important;
-    box-shadow: none !important;
+    // border-left: none !important;
+    // border-top: none !important;
+    // border-right: none !important;
+    // box-shadow: none !important;
   }
   .form .for_text {
     background: #f7f6f6 !important;
@@ -280,6 +281,8 @@ export default {
     &:focus {
       outline: 0;
       border-color: #009cde;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
     }
     &:valid + label::before {
       @extend .label-before;
