@@ -29,9 +29,9 @@
                 <p>إبحث عن وضعية أي عملية عبر إدخال رقم التحويل أو الرقم المرجعي و شهرتك.</p>
               </div>
             </v-col>
-            <v-col cols="12" lg="6" md="6" sm="12" style="background: #fff;">
+            <v-col cols="12" lg="6" md="6" sm="12" style="background: #fff">
               <div class="inputs">
-                <div class="field" style="    margin-top: 26px;">
+                <div class="field" style="margin-top: 26px">
                   <input
                     class=""
                     v-model="track_number"
@@ -46,16 +46,81 @@
                     title="رقم التحويل أو الرقم المرجعي"
                     data-title="رقم التحويل أو الرقم المرجعي"
                   ></label>
-                  <button style="position: absolute; right: 8px; top: 15px">
-                    <img
-                    width="15"
-                    height="15"
-                    src="https://img.icons8.com/fluency-systems-regular/48/info--v1.png"
-                    alt="info--v1"
-                  />
-                  </button>
-                
-                 
+
+                  <div class="text-center">
+                    <v-dialog v-model="dialog" width="auto">
+                      <template v-slot:activator="{ props }">
+                        <div class="mtcn_link">
+                          <button v-bind="props" style="position: absolute; right: 8px; top: 15px">
+                            <img
+                              width="15"
+                              height="15"
+                              src="https://img.icons8.com/fluency-systems-regular/48/info--v1.png"
+                              alt="info--v1"
+                            />
+                          </button>
+                        </div>
+                      </template>
+
+                      <v-card>
+                        <v-card-actions style="display: block; background: #ddd">
+                          <button
+                            color="primary"
+                            block
+                            @click="dialog = false"
+                            style="font-size: 14px; color: #333; text-align: start"
+                          >
+                            <v-icon icon="mdi mdi-close" />
+                          </button>
+                          <h4
+                            style="
+                              font-size: 14px;
+                              color: #333;
+                              margin-top: 10px;
+                              display: inline-block;
+                              text-align: center;
+                              width: 92%;
+                            "
+                          >
+                            رقم التحويل أو الرقم المرجعي
+                          </h4>
+                        </v-card-actions>
+                        <v-card-text
+                          style="
+                            text-align: end;
+                            color: #7e7874;
+                            font-size: 16px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            font-family: Roboto, Helvetica, Arial, sans-serif;
+                          "
+                        >
+                          <br />
+                          <br />
+                          إن رقم التحويل هو رقم فريد يتم تعيينه لعملية من أجل غايات تعقّبية. <br />
+                          <br />
+
+                          إذا قمت بإرسال عملية، يمكنك إيجاد هذا الرقم في الرسالة الإلكترونية
+                          التأكيدية التي استلمتها حين قمت بالعملية. <br />
+                          <br />
+
+                          أما إذا استلمت العملية، عليك طلب هذا الرقم من المرسل. <br />
+                          <br />
+
+                          يتم تعيين الرقم المرجعي لعملية ما عندما يتم إرسال المال بنجاح. بالنسبة
+                          للعمليات التي يتم استلام المال فيها نقداً، ينبغي أن يكون هذا الرقم في حوزة
+                          المستلم لاستلام النقود. <br />
+                          <br />
+
+                          إذا قمت بإرسال العملية، يمكنك إيجاد هذا الرقم في الرسالة الإلكترونية التي
+                          استلمتها حين أصبح المال جاهزاً للاستلام. <br />
+                          <br />
+
+                          إذا كنت مستلماً لهذه العملية، عليك طلب هذا الرقم من المرسل
+                        </v-card-text>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div class="field">
                   <input type="text" required v-model="name" />
@@ -66,7 +131,9 @@
           </v-row>
         </v-container>
         <v-container class="button_container">
-          <button type="submit" style="margin-top: 30px" class="submitBtn">تعقّب</button></v-container
+          <button type="submit" style="margin-top: 30px" class="submitBtn">
+            تعقّب
+          </button></v-container
         >
       </v-form>
     </div>
@@ -77,7 +144,7 @@
 export default {
   data() {
     return {
-      
+      dialog: false,
       track_number: '',
       name: ''
     }
@@ -283,7 +350,6 @@ export default {
       outline: 0;
       border-color: #009cde;
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-
     }
     &:valid + label::before {
       @extend .label-before;
@@ -296,5 +362,9 @@ export default {
       font-size: 17px;
     }
   }
+}
+
+.v-dialog > .v-overlay__content {
+  width: 43% !important;
 }
 </style>
