@@ -261,6 +261,9 @@ export default {
   color: #fff !important;
 }
 @media (max-width: 959px) {
+  .v-dialog > .v-overlay__content {
+  width: 100% !important;
+}
   .form_container {
     padding-top: 0 !important;
   }
