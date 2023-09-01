@@ -199,7 +199,7 @@ export default {
   }
   .notes {
     color: #a2a2a2;
-    font-size: 20px;
+    font-size: 15px;
     @media (max-width: 480px) {
       font-size: 12px;
     }
