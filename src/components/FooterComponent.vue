@@ -104,6 +104,7 @@ footer {
 
 footer a {
   color: #fff;
+  text-decoration: none !important;
 }
 footer .social {
   text-align: center;

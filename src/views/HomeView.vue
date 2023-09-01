@@ -3,7 +3,8 @@
     <v-container>
       <router-link to="/">
         <img
-          style="width: 130px; margin: auto; display: block"
+        class="mainLogo"
+          style="width:200px; margin: auto; display: block"
           src="../assets/images/logo1.png"
           alt=""
       /></router-link>
@@ -38,5 +39,12 @@ a {
   border-top: 1px solid #ddd;
   background: #f4f4f4;
   padding: 20px 0 0;
+}
+
+@media (max-width: 959px) {
+  .mainLogo{
+    width: 130px !important
+    ;
+  }
 }
 </style>
