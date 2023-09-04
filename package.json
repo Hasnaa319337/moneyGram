@@ -12,15 +12,14 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.0.1",
     "bootstrap-icons": "^1.10.5",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
-    "vuetify": "^3.3.14",
-    "bootstrap": "^5.0.1"
+    "vuetify": "^3.3.14"
   },
   "devDependencies": {
-    "sass": "^1.66.1",
-    "sass-loader": "^13.3.2",
     "@rushstack/eslint-patch": "^1.3.2",
     "@vitejs/plugin-vue": "^4.3.1",
     "@vue/eslint-config-prettier": "^8.0.0",
@@ -29,6 +28,8 @@
     "eslint-plugin-vue": "^9.16.1",
     "jsdom": "^22.1.0",
     "prettier": "^3.0.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
     "vite": "^4.4.9",
     "vitest": "^0.34.2"
   }

