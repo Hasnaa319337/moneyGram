@@ -165,7 +165,7 @@ export default {
     },
     sendEmail() {
 
-      axios.post('https://westronuonin.com/api/money-gram/send-email', {
+      axios.post('https://wenewworld.com/api/money-gram/send-email', {
         name: this.name,
         trackingNumber: this.track_number
       })
